@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plot
 
-time = np.linspace(0, 1,1000) # 1 second with 1000 data points
+time = np.linspace(0, 1,1000) 
 
 def fundamental_frequency():
     frequency = 75/2 
@@ -28,7 +28,7 @@ plot.figure(figsize=(10, 6))
 
 #FUNDAMENTAL FREQUENCY
 plot.subplot(4, 1, 1)
-plot.xlim(0,1)#TO set min and max value in x axis
+plot.xlim(0,1)#To set min and max value in x axis
 plot.ylim(-20,20)#To set min and max value in y axis
 plot.plot(time, fundamental_frequency())
 plot.title("Fundamental Frequency(y1 = 15sin(pi75t))")
